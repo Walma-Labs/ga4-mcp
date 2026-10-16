@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.walma-labs/ga4-mcp",
+  "description": "Read-only Google Analytics 4 MCP server with service-account auth: core, realtime, funnel and conversions reports.",
+  "repository": {
+    "url": "https://github.com/Walma-Labs/ga4-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@walma-labs/ga4-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GA4_SERVICE_ACCOUNT_FILE",
+          "description": "Path to the Google service-account JSON key (or set GA4_SERVICE_ACCOUNT_JSON with the key inline)",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "GA4_SERVICE_ACCOUNT_JSON",
+          "description": "The service-account key as inline JSON (alternative to the file path)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

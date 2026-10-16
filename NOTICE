@@ -1,0 +1,8 @@
+ga4-mcp
+Copyright 2026 Walma AI
+
+This product includes material derived from analytics-mcp
+(https://github.com/googleanalytics/google-analytics-mcp),
+Copyright Google LLC, licensed under the Apache License, Version 2.0:
+the tool names, argument contracts, tool descriptions and argument hints.
+The implementation is an independent TypeScript rewrite.
